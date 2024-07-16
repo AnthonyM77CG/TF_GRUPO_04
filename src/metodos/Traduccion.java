@@ -9,13 +9,13 @@ public class Traduccion {
     public static void cambiarIdioma(String nuevoIdioma) {
         switch (nuevoIdioma) {
             case "Ingles":
-                bundle = ResourceBundle.getBundle("Resources/Textos_en");
+                bundle = ResourceBundle.getBundle("resources/Textos_en");
                 break;
             case "Portugués":
-                bundle = ResourceBundle.getBundle("Resources/Textos_pt");
+                bundle = ResourceBundle.getBundle("resources/Textos_pt");
                 break;
             default:
-                bundle = ResourceBundle.getBundle("Resources/Textos");
+                bundle = ResourceBundle.getBundle("resources/Textos");
                 break;
         }
         idioma = nuevoIdioma;
